@@ -1,0 +1,23 @@
+       p.card-text{
+        font-weight: bold;
+        display: inline-block;
+       }
+       p.card-text span{
+        font-size:larger;
+        font-weight: lighter;
+        background-color: rgb(230, 218, 212);
+        padding: 0 5px 0 5px;
+       }
+
+       .img-size{
+        width:100px;
+        margin-top: -40px;
+        background-color: rgb(223, 220, 220);
+       }
+       .addstock-btn{
+        display: block;
+        margin-top: 5px;
+       }
+       .inline-form{
+        display: inline-block;
+       }

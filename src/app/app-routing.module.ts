@@ -21,6 +21,8 @@ import { ProfileComponent } from './admin/settings/profile/profile.component';
 import { AddStockComponent } from './admin/stock/add-stock/add-stock.component';
 import { EditStockComponent } from './admin/stock/edit-stock/edit-stock.component';
 import { TotalStockComponent } from './admin/stock/total-stock/total-stock.component';
+import { ListProductComponent } from './admin/products/list-product/list-product.component';
+import { InterhomeComponent } from './admin/interfece/interhome/interhome.component';
 
 const routes: Routes = [
   // home components
@@ -36,31 +38,36 @@ const routes: Routes = [
   // admin Components
   {path:'admin',component:AdminComponent,
   children:[
-        // {path:'',redirectTo:'stock',pathMatch:'full'},
-        {path:"stock",component:StockComponent,pathMatch:'full',
+        {path:'',redirectTo:'stock',pathMatch:'full'},
+        {path:"stock",component:StockComponent,
         children:[
-          {path:'',component:TotalStockComponent},
-          {path:'/admin/stock/addstock',component:AddStockComponent,pathMatch:'full'},
-          {path:'editstock',component:EditStockComponent,pathMatch:'full'},
+          {path:'',redirectTo:'total-stock',pathMatch:'full'},
+          {path:'total-stock',component:TotalStockComponent},
+          {path:'addstock',component:AddStockComponent},
+          {path:'editstock',component:EditStockComponent},
         ]},
 
     {path:"aproducts",component:AProductsComponent,
         children:[
+          {path:'',redirectTo:'listproduct',pathMatch:'full'},
           {path:'addproduct',component:AddProductComponent},
-          {path:'listproduct',component:EditProductComponent},
+          {path:'listproduct',component:ListProductComponent},
           {path:'editproduct/:id',component:EditProductComponent},
           // {path:'editproduct/:id',component:EditProductComponent},
           {path:'offers',component:OffersComponent}
         ]},
     {path:'interface',component:InterfeceComponent,
           children:[
-            {path:'aboutedit',component:AboutEditComponent},
+            {path:'',redirectTo:'home',pathMatch:'full'},
+            {path:'home',component:InterhomeComponent},
+            {path:'about',component:AboutEditComponent},
             {path:'privacy',component:PrivacyPolicyComponent}
           ]},
     {path:'settings',component:SettingsComponent,
           children:[
+            {path:'',redirectTo:'profile',pathMatch:'full'},
+            {path:'profile',component:ProfileComponent},
             {path:'manageadmin',component:ManageAdminComponent},
-            {path:'profile',component:ProfileComponent}
           ]},
     
 ]},

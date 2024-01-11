@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-product.component.css']
 })
 export class ListProductComponent {
+  editProduct(id:any){
+    console.log(id);
+    
+
+  }
 
 }

@@ -26,6 +26,7 @@ import { PrivacyPolicyComponent } from './admin/interfece/privacy-policy/privacy
 import { ManageAdminComponent } from './admin/settings/manage-admin/manage-admin.component';
 import { ProfileComponent } from './admin/settings/profile/profile.component';
 import { AProductsComponent } from './admin/products/products.component';
+import { InterhomeComponent } from './admin/interfece/interhome/interhome.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { AProductsComponent } from './admin/products/products.component';
     PrivacyPolicyComponent,
     ManageAdminComponent,
     ProfileComponent,
-    AProductsComponent
+    AProductsComponent,
+    InterhomeComponent
    
   ],
   imports: [

@@ -1,6 +1,6 @@
  
  
- 
+ <!-- navBar -->
   
 <nav class="navbar navbar-fixed-top navbar-toggleable-sm navbar-inverse  mb-0" style="background-color: rgb(33,37,41);">  
     
@@ -15,30 +15,24 @@
           <span class="navbar-toggler-icon"> </span>  
       </button>  
   </div>  
-  <!-- <div class="navbar-collapse collapse" id="collapsingNavbar">  
-   
-    <ul class="navbar-nav ml-auto">  
-      <li class="nav-item">  
-        <a class="nav-link" href="" data-target="#myModal" data-toggle="modal"> About </a>  
-      </li>  
-    </ul>  
-  </div>   -->
+  
 </nav>  
+<!-- Side Bar -->
 <div class="container-fluid" id="main">  
   <div class="row row-offcanvas row-offcanvas-left ">  
-    <div class="col-md-3 col-lg-2 sidebar-offcanvas  " style="background-color: rgb(33,37,41);"  id="sidebar" role="navigation">  
+    <div class="col-md-3 col-lg-2 sidebar-offcanvas  " style="background-color: rgb(33,37,41); height: 92vh; "  id="sidebar" role="navigation">  
       <ul class="nav flex-column pl-1 mt-5">  
           
-        <li class="nav-item"> <a class="nav-link" [routerLink]="'./'">
+        <li class="nav-item"> <a class="nav-link" [routerLink]="'./'"[routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}" >
             <svg class="svg-inline--fa fa-gauge-high" height="16" width="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gauge-high" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="rgb(101,129,148)" d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg><!-- <i class="fas fa-tachometer-alt"></i> Font Awesome fontawesome.com -->  
             Stock </a></li>  
-        <li class="nav-item"> <a class="nav-link" [routerLink]="'./aproducts'"> 
+        <li class="nav-item"> <a class="nav-link" [routerLink]="'./aproducts'" [routerLinkActive]="'active'"> 
             <svg class="svg-inline--fa fa-table-columns" height="16" width="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="table-columns" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="rgb(101,129,148)" d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm64 64V416H224V160H64zm384 0H288V416H448V160z"></path></svg><!-- <i class="fas fa-columns"></i> Font Awesome fontawesome.com -->
             Products </a> </li>  
-        <li class="nav-item"> <a class="nav-link" [routerLink]="'./interface'"> 
+        <li class="nav-item"> <a class="nav-link" [routerLink]="'./interface'" [routerLinkActive]="'active'"> 
             <svg class="svg-inline--fa fa-book-open" height="16" width="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="rgb(101,129,148)" d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"></path></svg><!-- <i class="fas fa-book-open"></i> Font Awesome fontawesome.com -->
             Interface</a> </li>  
-        <li class="nav-item"> <a class="nav-link" [routerLink]="'./settings'"> 
+        <li class="nav-item"> <a class="nav-link" [routerLink]="'./settings'" [routerLinkActive]="'active'"> 
             <svg class="svg-inline--fa fa-book-open"  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="rgb(101,129,148)" d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/></svg><!-- <i class="fas fa-book-open"></i> Font Awesome fontawesome.com -->
             settings</a> </li>  
           
@@ -50,288 +44,11 @@
     <div class="col-md-9 col-lg-10 main">  
         
         <h4 class="display-4 hidden-xs-down">  
-            Bootstrap 4 Admin Panel  
+            selection Heading  
         </h4>  
         <router-outlet></router-outlet>
-        <!-- <div class="alert alert-warning fade collapse" role="alert" id="myAlert">  
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">  
-                  <span aria-hidden="true"> ? </span>  
-                  <span class="sr-only"> Close </span>  
-              </button>  
-               </div>   -->
+        </div>
+        </div>
+        </div>
         
-      <div class="row placeholders mb-3">             
-      </div>  
-      <a id="features"> </a>  
-      <hr>  
-      <h1>  
-        This admin panel contains all the features and classes of Bootstrap 4.        
-      </h1> <hr>  
-      
-       
-      <a id="more"></a>  
-      <hr>  
-
-      <h2 class="sub-header">Use card decks for equal height rows of cards</h2>  
-      <div class="card-deck-wrapper mb-3">  
-        <div class="card-deck">  
-          <div class="card card-inverse card-success text-center">  
-            <div class="card-block">  
-              <blockquote class="card-blockquote">  
-                <p> It's really good news that the new Bootstrap 4 now has support for CSS 3 flexbox. </p>  
-              </blockquote>  
-            </div>  
-          </div>  
-          <div class="card card-inverse card-danger text-center">  
-            <div class="card-block">  
-              <blockquote class="card-blockquote">  
-                <p> The Bootstrap 3.x element that was called "Panel" before, is now called a "Card". </p>  
-              </blockquote>  
-            </div>  
-          </div>  
-          <div class="card card-inverse card-warning text-center">  
-            <div class="card-block">  
-              <blockquote class="card-blockquote">  
-                <p> there are also some interesting new text classes for uppercase and capitalize. </p>  
-                                </blockquote>  
-            </div>  
-          </div>  
-          <div class="card card-inverse card-info text-center">  
-            <div class="card-block">  
-              <blockquote class="card-blockquote">  
-                <p> If you want to use cool icons in Bootstrap 4, you'll have to find your own such as Font Awesome or Ionicons. </p>  
-                <footer> The Glyph icons are not <cite title="Source Title"> Included </cite> </footer>  
-              </blockquote>  
-            </div>  
-          </div>  
-        </div>  
-      </div>  
-      <a id="flexbox"></a>  
-      <hr>  
-      <h2> Masonry-style grid columns </h2>  
-      <h6> with Bootstrap 4 flexbox </h6>  
-      <div class="card-columns mb-3">  
-        <div class="card">  
-           <div class="card-block">  
-            <h4 class="card-title"> Card title that wraps to a new line </h4>  
-            <p class="card-text"> This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. </p>  
-          </div>  
-        </div>  
-        <div class="card card-block">  
-          <blockquote class="card-blockquote">  
-            <p> Bootstrap 4 will be lighter and easier to customize. </p>  
-            <footer>  
-              <small class="text-muted">  
-                            Someone famous like <cite title="Source Title"> Mark Ottor </cite>  
-                          </small>  
-            </footer>  
-          </blockquote>  
-        </div>  
-        <div class="card">  
-           <div class="card-block">  
-            <h4 class="card-title"> Card title </h4>  
-            <p class="card-text"> This card has supporting text below as a natural lead-in to additional content. </p>  
-            <p class="card-text"> <small class="text-muted"> Last updated 13 mins ago </small> </p>  
-          </div>  
-        </div>  
-               <div class="card card-block text-center">  
-          <h4 class="card-title">Clever heading</h4>  
-          <p class="card-text"> This card has supporting text below as a natural lead-in to additional content. </p>  
-          <p class="card-text"><small class="text-muted">Last updated 15 mins ago </small> </p>  
-        </div>  
-        <div class="card">  
         
-        </div>  
-        <div class="card card-block text-right">  
-          <blockquote class="card-blockquote">  
-            <p> there are also some interesting new text classes to uppercase or capitalize. </p>  
-            <footer>  
-              <small class="text-muted">  
-                            Someone famous in <cite title="Source Title"> Bootstrap 4 </cite>  
-                          </small>  
-            </footer>  
-          </blockquote>  
-        </div>  
-        <div class="card card-block">  
-          <h4 class="card-title"> Responsive </h4>  
-          <p class="card-text"> This is a wider card with supporting text below as a natural lead-in to additional content. </p>  
-          <p class="card-text"> <small class="text-muted"> Last updated 13 mins ago </small> </p>  
-        </div>  
-        <div class="card">  
-          <div class="card-block">  
-            <ul class="list-unstyled">  
-              <li class="text-capitalize"> <code class="text-lowercase"> text-capitalize </code> Capitalize each word </li>  
-              <li class="text-uppercase"> <code class="text-lowercase"> text-uppercase </code> Uppercase text </li>  
-              <li class="text-success"> <code> text-success </code> Contextual colors for text </li>  
-              <li> <code>text-muted </code> <span class="text-muted"> Lighten with muted </span> </li>  
-              <li> <code>text-info </code> <span class="text-muted"> Info text color </span> </li>  
-              <li> <code> text-danger </code> <span class="text-muted"> Danger text color </span></li>  
-              <li> <code> text-warning </code> <span class="text-muted"> Warning text color </span> </li>  
-              <li> <code>text-primary </code> <span class="text-primary"> Primary text color </span> </li>  
-            </ul>  
-          </div>  
-        </div>  
-        <div class="card card-block">  
-          <h4 class="card-title"> Heading </h4>  
-          <p class="card-text"> So now that you've seen some of what Bootstrap 4 has to offer, are you going to give it a try? </p>  
-          <p class="card-text"><small class="text-muted">Last updated 2 mins ago </small> </p>  
-        </div>  
-      </div>  
-      <a id="layouts"> </a>  
-      <hr>  
-      <h2 class="sub-header"> Interesting layouts and elements </h2>  
-      <div class="row mb-3">  
-        <div class="col-lg-6">  
-          <div class="card">  
-            <div class="card-header">  
-              Bye .well, .panel & .thumbnail  
-            </div>  
-            <div class="card-block">  
-              <h4 class="card-title">Replaced with .card</h4>  
-              <p class="card-text"> All of these Bootstrap 3.x components have been dropped entirely for the new card component. </p>  
-              <button type="button" class="btn btn-secondary btn-lg"> Large </button>  
-            </div>  
-          </div>  
-        </div>  
-         
-        <div class="clearfix"> </div>  
-        <div class="col-lg-6">  
-          <div class="card card-default card-block">  
-            <ul id="tabsJustified" class="nav nav-tabs nav-justified">  
-              <li class="nav-item">  
-                <a class="nav-link" href="" data-target="#tab1" data-toggle="tab"> List </a>  
-              </li>  
-              <li class="nav-item">  
-                <a class="nav-link active" href="" data-target="#tab2" data-toggle="tab"> Profile </a>  
-              </li>  
-              <li class="nav-item">  
-                <a class="nav-link" href="" data-target="#tab3" data-toggle="tab"> More </a>  
-              </li>  
-            </ul>  
-            <br>  
-            <div id="tabsJustifiedContent" class="tab-content">  
-              <div class="tab-pane" id="tab1">  
-                <div class="list-group">  
-                  <a href="" class="list-group-item"> <span class="float-right label label-success"> 51 </span> Home Link </a>  
-                  <a href="" class="list-group-item"> <span class="float-right label label-success"> 8 </span> Link 2 </a>  
-                  <a href="" class="list-group-item"> <span class="float-right label label-success"> 23 </span> Link 3 </a>  
-                  <a href="" class="list-group-item text-muted"> Link </a>  
-                </div>  
-              </div>  
-              <div class="tab-pane active" id="tab2">  
-                <div class="row">  
-                  <div class="col-sm-7">  
-                    <h4>Profile Section</h4>  
-                    <p> Imagine creating this simple user profile inside a tab card. </p>  
-                  </div>  
-                  </div>  
-                <hr>  
-                <a href="javascrip" class="btn btn-info btn-block"> Read More Profiles </a>  
-                <div class="spacer5"></div>  
-              </div>  
-              <div class="tab-pane" id="tab3">  
-                <div class="list-group">  
-                  <a href="" class="list-group-item"> <span class="float-right label label-info label-pill">44</span> <code>.panel</code> is now <code>.card</code> </a>  
-                  <a href="" class="list-group-item"> <span class="float-right label label-info label-pill">8</span> <code>.nav-justified</code> is deprecated </a>  
-                  <a href="" class="list-group-item"><span class="float-right label label-info label-pill">23</span> <code>.badge</code> is now <code>.label-pill</code></a>  
-                  <a href="" class="list-group-item text-muted"> Message </a>  
-                </div>  
-              </div>  
-            </div>  
-          </div>  
-        </div>  
-        <div class="col-lg-6">  
-          <div id="accordion" role="tablist" aria-multiselectable="true">  
-            <div class="card">  
-              <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  
-                Collapsible Group Item #1  
-              </div>  
-              <div id="collapseOne" class="card-block collapse in" role="tabpanel" aria-labelledby="headingOne">  
-                <p>This is a Bootstrap 4 accordion that uses the <code>.card</code> classes instead of <code>.panel</code>  
-.     </p>  
-              </div>  
-              <div class="card-header" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">  
-                Collapsible Group Item #2  
-              </div>  
-              <div id="collapseTwo" class="card-block collapse" role="tabpanel" aria-labelledby="headingTwo">  
-                <p> Just like it's predecesor, Bootstrap 4 is mobile-first so that you start by designing for smaller devices such as smartphones and tablets, then proceed to laptop and desktop layouts. </p>  
-              </div>  
-              <div class="card-header" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  
-                Collapsible Group Item #3  
-              </div>  
-              <div id="collapseThree" class="card-block collapse" role="tabpanel" aria-labelledby="headingThree">  
-                <p> Bootstrap employs a handful of important global styles and settings that you?ll need to be aware of when using it </p>  
-              </div>  
-            </div>  
-          </div>  
-        </div>  
-      </div>  
-    </div>
-      <!--dynamic Content End  -->
-
-
-  </div>  
-</div>  
-<footer class="container-fluid">  
-  <p class="text-right small"> ?2020-2021 </p>  
-</footer>  
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">  
-  <div class="modal-dialog" role="document">  
-    <div class="modal-content">  
-      <div class="modal-header">  
-        <h4 class="modal-title" id="myModalLabel"> Modal </h4>  
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
-                  <span aria-hidden="true"> ? </span>  
-                  <span class="sr-only"> Close </span>  
-              </button>  
-      </div>  
-      <div class="modal-body">  
-        This is a dashboard layout for Bootstrap 4. </div>  
-      <div class="modal-footer">  
-        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>  
-        <button type="button" class="btn btn-primary-outline" data-dismiss="modal"> OK </button>  
-      </div>  
-    </div>  
-  </div>  
-</div>  
-<!-- <script>  
-  if (window.self !== window.top && window.name != "view1") {  
-    window.alert = function() {  
-            };  
-    window.confirm = function() {  
-    };  
-    window.prompt = function() {  
-    };  
-    window.open = function() {  
-    };  
-  }  
-      document.addEventListener(  
-    "DOMContentLoaded",  
-    function() {  
-      var links = document.getElementsByTagName("A");  
-      for (var i = 0; i < links.length; i++) {  
-        if (links[i].href.indexOf("#") != -1) {  
-          links[i].addEventListener("click", function(e) {  
-            console.debug("prevent href=# click");  
-            if (this.hash) {  
-              if (this.hash == "#") {  
-                e.preventDefault();  
-                return false;  
-              } else {  
-              }  
-            }  
-            return false;  
-          });  
-        }  
-      }  
-    },  
-    false  
-  );  
-</script>  
-<script>  
-  $(document).ready(function() {  
-    $("[data-toggle=offcanvas]").click(function() {  
-      $(".row-offcanvas").toggleClass("active");  
-    });  
-  });  
-</script>   -->

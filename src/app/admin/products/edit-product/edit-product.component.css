@@ -1,0 +1,29 @@
+.pName{
+    border:none;
+    font-weight: bold;
+    font-size:x-large;
+    text-align: center;
+    width: 100%;
+}
+.pName:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0,0.5);
+}
+h2{
+    text-align: center;
+}
+.img-size{
+    width:60%
+}
+.quantity{
+    width: 50%;
+}
+.ml{
+    background-color:#E3E4E8;
+    text-align: center;
+    padding: 5px;
+}
+textarea{
+    width: 100%;
+}
