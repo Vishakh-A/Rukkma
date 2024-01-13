@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
          
-          <li class="nav-item">
+          <li class="nav-item " *ngIf="!userLogin">
             <a class="nav-link" [routerLink]="'/login'">Sign-in</a>
           </li>
           
@@ -34,6 +34,20 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="'/about'">About Us</a>
+          </li>
+          <li class="nav-item" *ngIf="userLogin">
+            <div class="dropdown">
+              <button class="  userbtn" type="button" id="" [ngStyle]="{'background-image':'url('+userImg+')'}" (click)="drop=!drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               User
+              </button>
+              <div class="dropdown-menu dropdown-menu-right mt-2 " [ngClass]="{'show':drop}" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">My Profile</a>
+                <a class="dropdown-item" href="#">Orders</a>
+                <a class="dropdown-item" href="#">Cart</a>
+                <a class="dropdown-item" href="#">Customer Support</a>
+                <a class="dropdown-item " style="cursor: pointer;"  (click)="logout()">Logout</a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

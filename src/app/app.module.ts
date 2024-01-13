@@ -27,6 +27,7 @@ import { ManageAdminComponent } from './admin/settings/manage-admin/manage-admin
 import { ProfileComponent } from './admin/settings/profile/profile.component';
 import { AProductsComponent } from './admin/products/products.component';
 import { InterhomeComponent } from './admin/interfece/interhome/interhome.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { InterhomeComponent } from './admin/interfece/interhome/interhome.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
