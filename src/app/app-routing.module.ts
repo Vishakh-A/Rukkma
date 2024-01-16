@@ -23,6 +23,7 @@ import { EditStockComponent } from './admin/stock/edit-stock/edit-stock.componen
 import { TotalStockComponent } from './admin/stock/total-stock/total-stock.component';
 import { ListProductComponent } from './admin/products/list-product/list-product.component';
 import { InterhomeComponent } from './admin/interfece/interhome/interhome.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   // home components
@@ -32,7 +33,8 @@ const routes: Routes = [
           {path:'about',component:AboutComponent},
           {path:'login',component:LoginComponent},
           {path:'products',component:ProductsComponent},
-          {path:'product/:id',component:ProductComponent}
+          {path:'product/:id',component:ProductComponent},
+          {path: 'user',component:UserComponent}
         ]
   },
   // admin Components
@@ -69,8 +71,8 @@ const routes: Routes = [
             {path:'profile',component:ProfileComponent},
             {path:'manageadmin',component:ManageAdminComponent},
           ]},
-    
-]},
+        ]},
+        
 
   
 ];

@@ -1,15 +1,14 @@
 <section>
     <div class="container container-fluid">
-        <form action="">
+        <form  [formGroup]="productForm" (ngSubmit)="onSubmit()">
+            
         <div class="row mt-4">
             <div class="col-md-4 imgborderleft">
                 <img class="card-img-top  img-size" src="https://i.ibb.co/nDK4cbB/dhanthapala-removebg-preview.png" alt="Card image cap">
                    
             </div>
-            
-        
             <div class="col-md-6">
-                <div class="row">
+                   <div class="row">
                     <div class="col-md-12">
                         <h1>{{product.name}}</h1>
                     </div>
@@ -21,19 +20,24 @@
                     </div>
                     <hr>
                     
-                    <div class="col-md-12" *ngFor="let price of product.priceArray">
-                        <h4 >500</h4>
+                    <div class="col-md-12" >
+                        <h4 > ₹ {{price}}</h4>
                        
                     </div>
                     <hr>
-                    
-                        <div class="col-md-3 mlborder">
-                            <input type="radio" checked name="ml" [(ngModel)]="selectqty" id="" value="100">
-                            <img width="30px" src="https://i.ibb.co/nDK4cbB/dhanthapala-removebg-preview.png" alt="" >
-                            <span for="">100 ml</span>
-                           
+                    <div  class="col-md-12" >
+                        <div class="row" >
+
+                            <div class="col-md-3 mlborder" *ngFor="let option of product.priceArray">
+                                <input type="radio" formControlName="selectedOption" checked   id="" [value]="option.qty">
+                                <img width="30px" src="https://i.ibb.co/nDK4cbB/dhanthapala-removebg-preview.png" alt="" >
+                                <span for="">{{option.qty}}</span>
+                               
+                            </div>
                         </div>
-                        <div class="col-md-3 mlborder">
+
+                    </div>
+                        <!-- <div class="col-md-3 mlborder">
                             <input type="radio" name="ml" [(ngModel)]="selectqty" id="" value="200">
                             <img width="30px" src="https://i.ibb.co/nDK4cbB/dhanthapala-removebg-preview.png" alt="" >
                             <span for="">200 ml</span>
@@ -45,10 +49,10 @@
                             <span for="">500 ml</span>
                            
 
-                        </div>
+                        </div> -->
                         <div class="col-md-4 form-group mt-4">
-                            <select class=" form-control form-control-lg" id="">
-                                <option value=""  >quantity</option>
+                            <select class=" form-control form-control-lg" formControlName="selectedCount" id="">
+                                <option value=null  >quantity</option>
                                 <option *ngFor="let number of qtyArray" [value]="number"> {{number}}</option>
                             </select>
                         </div>

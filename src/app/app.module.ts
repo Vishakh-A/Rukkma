@@ -27,7 +27,7 @@ import { ManageAdminComponent } from './admin/settings/manage-admin/manage-admin
 import { ProfileComponent } from './admin/settings/profile/profile.component';
 import { AProductsComponent } from './admin/products/products.component';
 import { InterhomeComponent } from './admin/interfece/interhome/interhome.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -62,7 +62,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
