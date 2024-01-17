@@ -15,7 +15,8 @@
 
 .circle-link:hover {
     transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgb(74, 73, 74);
+    box-shadow: 1px 3px 15px rgb(74, 73, 74);
+    background-color: white;
   }
 
   .iconsize{

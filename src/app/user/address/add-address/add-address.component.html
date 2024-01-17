@@ -1,1 +1,100 @@
-<p>add-address works!</p>
+<div class="container">
+    
+    <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
+        <h2 class="text-center">Add new Address</h2>
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <br>
+                    <input id="name" type="text" class="form-control" >
+                </div>
+                
+            </div>
+            <div class="col-md-8 m-auto">
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <br>
+                    <input id="mobile" type="text" class="form-control" >
+                </div>
+                
+            </div>
+            <div class="col-md-8 m-auto">
+                <div class="form-group">
+                    <label for="houseName">Flat, House no., Building, Company, Apartment</label>
+                    <br>
+                    <input id="houseName" type="text" class="form-control" >
+                </div>
+                
+            </div>
+            <div class="col-md-8 m-auto">
+                <div class="form-group">
+                    <label for="area">Area, Street, Sector, Village</label>
+                    <br>
+                    <input id="area" type="text" class="form-control" >
+                </div>
+                
+            </div>
+            <div class="col-md-8 m-auto">
+                <div class="form-group">
+                    <label for="landmark">Landmark</label>
+                    <br>
+                    <input id="landmark" type="text" class="form-control" >
+                </div>
+                
+            </div>
+            <div class="col-md-8 m-auto">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <br>
+                            <input id="city" type="text" class="form-control" >
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="pincode">Pin</label>
+                            <br>
+                            <input id="pincode" type="text" class="form-control" >
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <br>
+                            <select  id="country" formControlName="personCountry" class="form-control">
+                                <option *ngFor="let country of location"  [value]="country.country">{{country.country}}</option>
+                            </select>
+                       </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group" *ngIf="states!=null">
+                            <label for="state">State</label>
+                            <br>
+                            <select  id="state" formControlName="personState" class="form-control">
+                                <option *ngFor="let state of states.state" [value]="state.stateName">{{state.stateName}}</option>
+                            </select>
+                       </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group" *ngIf="district">
+                            <label for="district">District</label>
+                            <br>
+                            <select  id="district" formControlName="personDistrict" class="form-control">
+                                <option *ngFor="let dis of district" [value]="dis">{{ dis }}</option>
+                            </select>
+                       </div>
+                        
+                    </div>
+                    
+                </div>
+                <button class="btn btn-success btn-lg m-auto"   type="submit">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
