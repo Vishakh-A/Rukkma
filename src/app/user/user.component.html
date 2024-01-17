@@ -1,1 +1,20 @@
-<p>user works!</p>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-4" *ngFor="let item of items">
+            <a [routerLink]="item.route">
+            <div class="card text-black bg-light mb-3 circle-link card-width " (mouseenter)="onMouseEnter(item)" (mouseleave)="onMouseLeave(item)" style="max-width: 18rem;">
+                <div class="card-body">
+                    <div class="oneline" >
+                       <img class="iconsize mr-2" [src]="item.isHover? item.hoverImg : item.normalImg " alt="">
+                    </div>
+                    <div class="oneline">
+                        <h5 class="card-title">{{item.title}}</h5>
+                        <p class="card-text ml-1" style="color: black;">{{item.content}}</p>
+                      </div>
+                    </div>
+              </div>
+            </a>
+        </div>
+        
+    </div>
+</div>

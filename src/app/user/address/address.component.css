@@ -1,0 +1,13 @@
+.add-icon{
+    margin:auto;
+    text-align: center;
+    
+}
+
+.add-icon:hover{
+    cursor: pointer;
+}
+p{
+    line-height: 0.7;
+    font-weight: 500;
+}

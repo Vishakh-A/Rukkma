@@ -24,6 +24,12 @@ import { TotalStockComponent } from './admin/stock/total-stock/total-stock.compo
 import { ListProductComponent } from './admin/products/list-product/list-product.component';
 import { InterhomeComponent } from './admin/interfece/interhome/interhome.component';
 import { UserComponent } from './user/user.component';
+import { UserProfileComponent } from './user/profile/profile.component';
+import { OrdersComponent } from './user/orders/orders.component';
+import { CartComponent } from './user/cart/cart.component';
+import { AddressComponent } from './user/address/address.component';
+import { AddAddressComponent } from './user/address/add-address/add-address.component';
+ 
 
 const routes: Routes = [
   // home components
@@ -34,7 +40,13 @@ const routes: Routes = [
           {path:'login',component:LoginComponent},
           {path:'products',component:ProductsComponent},
           {path:'product/:id',component:ProductComponent},
-          {path: 'user',component:UserComponent}
+          {path: 'user',component:UserComponent},
+          {path:'user/profile',component:UserProfileComponent},
+          {path:'user/orders',component:OrdersComponent},
+          {path:'user/cart',component:CartComponent},
+          {path:'user/address',component:AddressComponent},
+          {path:'user/add-address',component:AddAddressComponent}
+
         ]
   },
   // admin Components

@@ -28,6 +28,12 @@ import { ProfileComponent } from './admin/settings/profile/profile.component';
 import { AProductsComponent } from './admin/products/products.component';
 import { InterhomeComponent } from './admin/interfece/interhome/interhome.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OrdersComponent } from './user/orders/orders.component';
+import { CartComponent } from './user/cart/cart.component';
+import { AddressComponent } from './user/address/address.component';
+import { UserProfileComponent } from './user/profile/profile.component';
+import { AddAddressComponent } from './user/address/add-address/add-address.component';
+
 
 
 @NgModule({
@@ -56,7 +62,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ManageAdminComponent,
     ProfileComponent,
     AProductsComponent,
-    InterhomeComponent
+    InterhomeComponent,
+    OrdersComponent,
+    CartComponent,
+    AddressComponent,
+    UserProfileComponent,
+    AddAddressComponent
    
   ],
   imports: [
