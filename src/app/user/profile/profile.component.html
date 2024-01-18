@@ -1,1 +1,21 @@
-<p>profile works!</p>
+<div class="container ">
+    <div class="row mt-4">
+        <div class="col-md-1">
+            
+        </div>
+        <div class="col-md-10">
+            <ul class="list-group">
+                <li *ngFor="let item of profileArray " (mouseenter)="onMouseEnter(item)" (mouseleave)="onMouseLeave(item)" class="list-group-item d-flex justify-content-between align-items-left">
+                  <div>
+                    <h6>{{item.title}} :</h6>
+                  <input class="form-control ml-4" [disabled]="!item.isEdit" type="text" [value]="item.value"> 
+                  </div>
+                 <span class="badge  badge-pill"(click)="!item.isEdit?onEdit(item):onSave(item)"><img class="edit-icon" [src]="item.isHover? hoverUrl :normalUrl"t=""></span>
+                </li>
+              </ul>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+    </div>
+</div>

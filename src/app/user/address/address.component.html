@@ -6,7 +6,7 @@
         </div>
         
         
-        <div class="col-md-4 mb-4" *ngFor="let address of addressArray">
+        <div class="col-md-4 mb-4" *ngFor="let address of addressArray ; let id =index">
             <div class="card" >
                 <div class="card-body" style="width: 18rem;">
                   <h5 class="card-title">{{address.name}}</h5>
@@ -17,8 +17,8 @@
                   <p class="card-text">{{address.dist +' , '+address.state +' , ' + address.country}} </p>
                   <p class="card-text">Pin : {{address.pincode}}</p>
                   <hr>
-                  <a href="#" class="card-link">Edit</a>
-                  <a href="#" class="card-link">Delete</a>
+                  <a [routerLink]="['../edit-address',id]" class="card-link">Edit</a>
+                  <button class="card-link delete" (click)="onDelete(address)">Delete</button>
                 </div>
               </div>
 

@@ -11,3 +11,11 @@ p{
     line-height: 0.7;
     font-weight: 500;
 }
+.delete{
+    background: none;
+    border: none;
+    color: #007bff;
+}
+.delete:hover{
+    color: #0056b3;
+}

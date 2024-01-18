@@ -45,7 +45,8 @@ const routes: Routes = [
           {path:'user/orders',component:OrdersComponent},
           {path:'user/cart',component:CartComponent},
           {path:'user/address',component:AddressComponent},
-          {path:'user/add-address',component:AddAddressComponent}
+          {path:'user/add-address',component:AddAddressComponent},
+          {path:'user/edit-address/:id',component:AddAddressComponent},
 
         ]
   },
@@ -67,7 +68,6 @@ const routes: Routes = [
           {path:'addproduct',component:AddProductComponent},
           {path:'listproduct',component:ListProductComponent},
           {path:'editproduct/:id',component:EditProductComponent},
-          // {path:'editproduct/:id',component:EditProductComponent},
           {path:'offers',component:OffersComponent}
         ]},
     {path:'interface',component:InterfeceComponent,

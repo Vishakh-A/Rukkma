@@ -1,13 +1,13 @@
 <div class="container">
     
     <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
-        <h2 class="text-center">Add new Address</h2>
+        <h2 class="text-center">{{title}}</h2>
         <div class="row">
             <div class="col-md-8 m-auto">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <br>
-                    <input id="name" type="text" class="form-control" >
+                    <input id="name" type="text" class="form-control" formControlName="personName">
                 </div>
                 
             </div>
@@ -15,7 +15,7 @@
                 <div class="form-group">
                     <label for="mobile">Mobile</label>
                     <br>
-                    <input id="mobile" type="text" class="form-control" >
+                    <input id="mobile" type="text" class="form-control" formControlName="personMobile" >
                 </div>
                 
             </div>
@@ -23,7 +23,7 @@
                 <div class="form-group">
                     <label for="houseName">Flat, House no., Building, Company, Apartment</label>
                     <br>
-                    <input id="houseName" type="text" class="form-control" >
+                    <input id="houseName" type="text" class="form-control" formControlName="personAddress" >
                 </div>
                 
             </div>
@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <label for="area">Area, Street, Sector, Village</label>
                     <br>
-                    <input id="area" type="text" class="form-control" >
+                    <input id="area" type="text" class="form-control" formControlName="personArea">
                 </div>
                 
             </div>
@@ -39,7 +39,7 @@
                 <div class="form-group">
                     <label for="landmark">Landmark</label>
                     <br>
-                    <input id="landmark" type="text" class="form-control" >
+                    <input id="landmark" type="text" class="form-control" formControlName="personLandmark" >
                 </div>
                 
             </div>
@@ -49,7 +49,7 @@
                         <div class="form-group">
                             <label for="city">City</label>
                             <br>
-                            <input id="city" type="text" class="form-control" >
+                            <input id="city" type="text" class="form-control" formControlName="personCity">
                         </div>
                         
                     </div>
@@ -57,7 +57,7 @@
                         <div class="form-group">
                             <label for="pincode">Pin</label>
                             <br>
-                            <input id="pincode" type="text" class="form-control" >
+                            <input id="pincode" type="text" class="form-control" formControlName="personPin" >
                         </div>
                         
                     </div>

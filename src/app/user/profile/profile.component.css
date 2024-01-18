@@ -1,0 +1,14 @@
+.edit-icon{
+    width: 30px;
+    pointer-events: none;
+}
+p{
+    text-align: left;
+}
+span{
+    cursor:pointer;
+}
+
+li:hover{
+    background-color: rgb(243, 242, 242);
+}

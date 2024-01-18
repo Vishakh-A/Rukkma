@@ -33,6 +33,7 @@ import { CartComponent } from './user/cart/cart.component';
 import { AddressComponent } from './user/address/address.component';
 import { UserProfileComponent } from './user/profile/profile.component';
 import { AddAddressComponent } from './user/address/add-address/add-address.component';
+import { ProfileEditComponent } from './user/profile/profile-edit/profile-edit.component';
 
 
 
@@ -67,7 +68,8 @@ import { AddAddressComponent } from './user/address/add-address/add-address.comp
     CartComponent,
     AddressComponent,
     UserProfileComponent,
-    AddAddressComponent
+    AddAddressComponent,
+    ProfileEditComponent
    
   ],
   imports: [
